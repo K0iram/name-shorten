@@ -1,5 +1,5 @@
 {
-    "name": "@koiram/name-shorten",
+    "name": "name-shorten",
     "author": "Mario Kennedy",
     "version": "1.0.0",
     "description": "A small npm package to shorten long names",
