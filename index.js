@@ -23,7 +23,6 @@ module.exports = shortenLongName = (firstName, lastName) => {
     let names = [
       fullLastMiddleInitial,
       fullMiddleSingleLastInitial,
-      fullMiddleDoubleLastInitial,
       noMiddleFullLast
     ]
     return closetToMax(names)
@@ -49,7 +48,7 @@ module.exports = shortenLongName = (firstName, lastName) => {
     let fullMiddleSingleLastInitial = `${firstNameParsed[0]} ${firstNameParsed[1]} ${lastName.charAt(0)}.` // Mario Daniel K.
     let noMiddleDoubleInitial = `${firstNameParsed[0]} ${lastNameParsed[0][0]}. ${lastNameParsed[1][0]}.`
     let noMiddleSingleInitial = `${firstNameParsed[0]} ${lastNameParsed[0][0]}.`
-	let tripleInitial = `${firstNameParsed[0]} ${firstNameParsed[1][0]}. ${lastNameParsed[0][0]}. ${lastNameParsed[1][0]}.`
+	  let tripleInitial = `${firstNameParsed[0]} ${firstNameParsed[1][0]}. ${lastNameParsed[0][0]}. ${lastNameParsed[1][0]}.`
 
     let names = [
       fullLastMiddleInitial,
