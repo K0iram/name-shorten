@@ -64,7 +64,6 @@ module.exports = shortenLongName = (firstName, lastName) => {
 }   
 
 const closetToMax = (arr) => {
-  debugger
   let shortName = ''
 
   const shortNames = arr.filter(name => name.length <= NAME_MAX_LENGTH)
