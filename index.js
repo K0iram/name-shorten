@@ -1,3 +1,4 @@
+import capitalize from './utils/capitalize'
 const NAME_MAX_LENGTH = 18;
 
 module.exports = shortenLongName = (firstName, lastName) => {
@@ -64,10 +65,10 @@ module.exports = shortenLongName = (firstName, lastName) => {
 }   
 
 const closetToMax = (arr) => {
-  let shortName = ''
-
+  
   const shortNames = arr.filter(name => name.length <= NAME_MAX_LENGTH)
   const nameLengths = shortNames.map(n => n.length)
+  let shortName = shortNames[nameLengths.indexOf(Math.max(...nameLengths))]
 
-  return shortNames[nameLengths.indexOf(Math.max(...nameLengths))]
+  return capitalize(shortName)
 }
