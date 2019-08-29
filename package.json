@@ -1,7 +1,7 @@
 {
   "name": "name-shorten",
   "author": "Mario Kennedy",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A small npm package to shorten long names",
   "license": "MIT",
   "repository": "mario7746/name-shorten",
