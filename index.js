@@ -41,18 +41,16 @@ module.exports = nameShorten = (firstName, lastName) => {
   }
 
   if (fullNameParsed.length > 3) {
-    const fullMiddleDoubleLastInitial = `${firstNameParsed[0]} ${firstNameParsed[1]} ${lastNameParsed[0].charAt (0)}. ${lastNameParsed[1][0]}.`; // Mario Daniel K. K.
     const fullLastMiddleInitial = `${firstNameParsed[0]} ${firstNameParsed[1][0]}. ${lastName}`; // Mario D. Kennedy Kavouras
+    const fullMiddleDoubleLastInitial = `${firstNameParsed[0]} ${firstNameParsed[1]} ${lastNameParsed[0].charAt (0)}. ${lastNameParsed[1][0]}.`; // Mario Daniel K. K.
     const noMiddleFullLast = `${firstNameParsed[0]} ${lastName}`; // Mario Kennedy Kavouras
-    const fullMiddleSingleLastInitial = `${firstNameParsed[0]} ${firstNameParsed[1]} ${lastName.charAt (0)}.`; // Mario Daniel K.
+    const tripleInitial = `${firstNameParsed[0]} ${firstNameParsed[1][0]}. ${lastNameParsed[0][0]}. ${lastNameParsed[1][0]}.`;
     const noMiddleDoubleInitial = `${firstNameParsed[0]} ${lastNameParsed[0][0]}. ${lastNameParsed[1][0]}.`;
     const noMiddleSingleInitial = `${firstNameParsed[0]} ${lastNameParsed[0][0]}.`;
-    const tripleInitial = `${firstNameParsed[0]} ${firstNameParsed[1][0]}. ${lastNameParsed[0][0]}. ${lastNameParsed[1][0]}.`;
 
     const names = [
       fullLastMiddleInitial,
       fullMiddleDoubleLastInitial,
-      fullMiddleSingleLastInitial,
       noMiddleFullLast,
       tripleInitial,
       noMiddleDoubleInitial,
